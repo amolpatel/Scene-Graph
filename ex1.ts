@@ -17,6 +17,7 @@ var cam1 = new sg.Camera(25);
 cam1.position = new sg.Vector(-100,50,200); 
 s1.world.add(cam1);
 
+
 // create a greenish light and put it up, behind and to the left of the camera
 var light1 = new sg.Light(new sg.Color(0.9,0.2,0.5));
 light1.position = new sg.Vector(-100,400,1000); 
@@ -125,12 +126,14 @@ s5.world.add(n5);
 var yRotation = 0;
 var camYRotation =20;
 var camYInc = 1;
+
+
 var s5renderFunc = function() {
 	yRotation += 3;
 	if (yRotation > 360) {
 		yRotation -= 360;
 	}
-	n5.rotation = sg.Matrix.makeRotationFromEuler(new sg.Vector(0,yRotation,35)); 
+	n5.rotation = sg.Matrix.makeRotationFromEuler(new sg.Vector(yRotation,0,35)); 
 	
 	camYRotation += camYInc;
 	if (camYRotation > 30 || camYRotation < -30) {
