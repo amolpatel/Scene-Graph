@@ -34,7 +34,6 @@ scenes:
 
 ![scene 1](https://github.gatech.edu/pages/cs3451f15/a2/img/ex1e.gif)
 
-## Due: Friday Oct 2nd, 5pm
 
 ## Overview 
 
@@ -60,18 +59,3 @@ The second part of the assignment is to create a simple portfolio page.  We do n
 6. when you click on one of the elements, it should get larger.  Ideally, it would provide more information about the portfolio element, but that is not necessary for this assignment.  When you click on the element again, or click on a different element, the first element should return to its original size (i.e., only one element is large at a time).
 
 You are free to make up portfolio items as you see fit;  they do not have to actually be your work, but can be anything reasonable.  A collection of 10 or more photos is fine, although we encourage you to take the opportunity to make something that you would be proud to show others.  We will not just the portforlio content elements themselves; the goal is to have a more complex example of your scene graph in use.
-
-For this assignment, you are **NOT** allowed to use any of the CSS3 transformation animation functions;  rather, you must implement the animations in code with your scene graph and requestAnimationFrame.
-
-## Submission
-
-Your grade will be based on satisfying the requirements described above.  You should submit your code in a clean zip file, as in the first two assignments.
-
-**Use the file names we have requested.** (SG.ts, a2.html, a2.ts).  The TAs need to be able to test your program as follows:
-
-1. cd into the directory and run ```npm install```
-2. compile with ```tsc```
-3. open and view the web page ```a2.html```
-
-The TAs will at least test your SG.ts against the provided ```ex1.html``` and ```ex1.ts``` sample, as 
-well as running your ```a2.html``` submission.  **NOTE:** the TAs may also test your SG.ts with other test programs of their own creation, so you should make sure you implement the library fully, as requested.  
